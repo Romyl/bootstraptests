@@ -1,0 +1,100 @@
+body {
+    background-color: paleturquoise;
+}
+
+.disappearing-box{
+    animation: houdini 2s ease-in-out alternate infinite;
+}
+
+@keyframes houdini {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(-25px);
+        opacity:1;
+    }
+
+}
+
+#changeRoomIcon {
+    width: 100px;
+    height: 100px;
+    margin: 0px 10px;
+    background-size: contain; /* icon adapt to container */ 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* .changeRoomIconOff:hover{
+    background-image: url("https://www.fillmurray.com/150/150");
+} */
+
+.changeRoomIconOff{
+    /* background-color: red; */
+    background-image: url("heartOff.png");
+   
+}
+
+.changeRoomIconOn{
+    /* background-color: green; */
+    background-image: url("heartOn.png");
+}
+
+#largeChangeRoomIcon{
+    /* Large heart icon OFF state */
+
+    /* ensure carousel clickable with overlay*/
+    visibility: hidden; 
+    position: absolute; 
+    z-index:1000;
+
+    /* center the heart icon to image*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0.3;
+
+    /* dimesnions to parent */
+    width: 40%;
+    height: 40%;
+
+    margin: 0px;
+    background-size: contain; /* icon adapt to container */ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("heartOn.png");
+}
+
+/* on dblclick carousel swtich state */
+.largeChangeRoomIconOn{
+    /* Large heart icon ON state */
+    animation: animLargeChangeRoomIcon 0.7s linear;
+    /* background-color: red; */
+}
+
+@keyframes animLargeChangeRoomIcon {
+    /* Large heart icon ON state anim */
+
+    0% {
+        visibility: visible;
+    }
+    50%{    
+        opacity: 1;
+        height: 70%;
+        width:70%;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+.cardDetails{
+    
+}

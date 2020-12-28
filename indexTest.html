@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Final Project UI Components</title>
+  <!-- custom styles -->
+  <link rel="stylesheet" href="stylesTest.css" />
+  <!-- bootstrap setup -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+
+
+  <!-- insert responsive Nav bar -->
+
+  <div class="container">
+
+    <!-- insert ShowRoom Cards -->
+
+    <!-- show room -->
+    <div class="row">
+
+      <div class="col-md-12">
+        <!-- card title 1 -->
+
+
+        <!-- Test cards -->
+        <div class="card border-0 mx-1">
+          <!-- <img src="https://placekitten.com/300/300" class="card-img-top" alt="..."> -->
+
+          <div id="carouselExampleIndicators1" class="carousel slide z-depth-1-half" data-ride="carousel"
+            data-interval="false" data-touch="true">
+            <!-- data-attribute call JS behaviours in bootstrap JQuery wow  -->
+
+
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+            </ol>
+
+            <!-- START insert clothing images here -->
+            <div id="carousel0" class="carousel-inner">
+
+              <!-- large ChangeRoom Icon test -->
+              <div id="largeChangeRoomIcon">
+              </div>
+
+              <div class="carousel-item active">
+                <img src="https://www.fillmurray.com/400/400" class="d-block w-100" alt="..." data-toggle="modal"
+                  data-target="#exampleModal">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.fillmurray.com/500/500" class="d-block w-100" alt="..." data-toggle="modal"
+                  data-target="#exampleModal">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.fillmurray.com/600/600" class="d-block w-100" alt="..." data-toggle="modal"
+                  data-target="#exampleModal">
+              </div>
+
+            </div>
+            <!-- END insert clothing images here -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- START Card Body -->
+        <div class="card-body">
+          <div class="d-flex align-items-md-start justify-content-md-between">
+
+            <div class="cardDetails">
+              <h5 class="card-title">Card title 1</h5>
+
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content.
+                This content is a little bit longer.</p>
+
+            </div>
+
+            <!-- changeRoom Icon test -->
+            <div id="changeRoomIcon" class="changeRoomIconOff">
+            </div>
+
+          </div>
+
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+        <!-- END Card Body -->
+      </div>
+
+    </div>
+    <!-- end of show room row-->
+    <!-- note rows of col 3 setup at 7 rows -->
+
+    <!-- Card Test -->
+    <div class="row">
+
+      <div class="col-md-12">
+        <!-- homepage card of our story -->
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="https://placekitten.com/640/360" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+      <!-- test amnimation -->
+      <h2>bounce with me</h2>
+
+      <img class="disappearing-box"
+        src="https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-animations-lesson-images/img/wizard.png"
+        alt="weird old wizard">
+  
+  <!-- JQUERY Boot strap uses -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  <!-- custom JS -->
+  <script src="mainTest.js"></script>
+</body>
+
+</html>
