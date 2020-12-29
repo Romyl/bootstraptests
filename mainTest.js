@@ -1,7 +1,21 @@
 console.log("loaded JS")
 
+//capture mobile double tap: large ChangeRoom Icon
+var tapedTwice = false;
 
-// Start change Room Icon Status
+function dbltapHandler(event) {
+    if(!tapedTwice) {
+        tapedTwice = true;
+        setTimeout( function() { tapedTwice = false; }, 300 );
+        return false;
+    }
+    event.preventDefault(); // prevent default mobile double tap zoomin on element.
+    //action on double tap goes below
+    console.log("double tap detected")
+    changeRoomIconToggle();
+ }
+
+// Start Large & Small change Room Icon Status
 
 function changeRoomIconOn (){
     console.log("on Change Room function");
@@ -44,9 +58,11 @@ function changeRoomIconToggle() {
     }
 }
 
-//small change room icon event listen
+// small change room icon event listen
 document.getElementById("changeRoomIcon").addEventListener("click", changeRoomIconToggle);
 // event listener over specific Carousel 
 document.getElementById("carousel0").addEventListener("dblclick", changeRoomIconToggle);
+// event listner over Moble device double tap.
+document.getElementById("carousel0").addEventListener("touchstart", dbltapHandler);
 
 // END change Room Icon Status
